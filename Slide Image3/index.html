@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Image</title>
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/15e239e756.js" crossorigin="anonymous"></script>
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- start slider container -->
+    <div class="slider-container">
+        <!-- start slider -->
+        <div class="slider">
+            <div class="slides">
+                
+                <!-- start radio buttons -->
+                <input type="radio" id="radio-btn1" name="radio" checked>
+                <input type="radio" id="radio-btn2" name="radio">
+                <input type="radio" id="radio-btn3" name="radio">
+                <input type="radio" id="radio-btn4" name="radio">
+                <input type="radio" id="radio-btn5" name="radio">
+                <!-- end radio buttons -->
+
+                <!-- start slide images -->
+                <div class="slide first">
+                    <img src="images/image1.jpg" alt="image1">
+                </div>
+                <div class="slide">
+                    <img src="images/image2.jpg" alt="image2">
+                </div>
+                <div class="slide">
+                    <img src="images/image3.jpg" alt="image3">
+                </div>
+                <div class="slide">
+                    <img src="images/image4.jpg" alt="image4">
+                </div>
+                <div class="slide">
+                    <img src="images/image5.jpg" alt="image5">
+                </div>
+                <!-- end slide images -->
+    
+                <!-- start manual navigation -->
+                <div class="navigation-manual">
+                    <label for="radio-btn1" class="manual-btn btn1"></label>
+                    <label for="radio-btn2" class="manual-btn btn2"></label>
+                    <label for="radio-btn3" class="manual-btn btn3"></label>
+                    <label for="radio-btn4" class="manual-btn btn4"></label>
+                    <label for="radio-btn5" class="manual-btn btn5"></label>
+                </div>
+                <!-- end manual navigation -->
+    
+            </div>
+        </div>
+        <!-- end slider -->
+    </div>
+    <!-- end slider container -->
+
+    <script src="js/app.js"></script>
+</body>
+</html>

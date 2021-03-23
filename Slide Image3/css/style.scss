@@ -1,0 +1,88 @@
+.slider-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 15px;
+
+    .slides {
+        width: 500%;
+        height: 100%;
+        display: flex;
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        #radio-btn1:checked ~ .first {
+            margin-left: 0;
+        }
+        #radio-btn2:checked ~ .first {
+            margin-left: -20%;
+        }
+        #radio-btn3:checked ~ .first {
+            margin-left: -40%;
+        }
+        #radio-btn4:checked ~ .first {
+            margin-left: -60%;
+        }
+        #radio-btn5:checked ~ .first {
+            margin-left: -80%;
+        }
+
+        #radio-btn1:checked ~ .navigation-manual .btn1,
+        #radio-btn2:checked ~ .navigation-manual .btn2,
+        #radio-btn3:checked ~ .navigation-manual .btn3,
+        #radio-btn4:checked ~ .navigation-manual .btn4,
+        #radio-btn5:checked ~ .navigation-manual .btn5 {
+            background-color: springgreen;
+        }
+        
+
+        .slide {
+            width: 20%;
+            height: 100%;
+            transition: 2s;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .navigation-manual {
+            width: 100%;
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            display: flex;
+            justify-content: center;
+
+            .manual-btn {
+                width: 10px;
+                height: 10px;
+                border: 3px solid springgreen;
+                border-radius: 50%;
+                margin: 0 20px;
+                cursor: pointer;
+                transition: .5s;
+
+                &:hover {
+                    background-color: springgreen;
+                }
+            }
+        }
+    }
+}
